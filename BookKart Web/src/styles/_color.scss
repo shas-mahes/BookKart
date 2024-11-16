@@ -1,0 +1,599 @@
+@import 'color-variable';
+
+/********************
+BASE COLORS
+********************/
+
+.bk-black {
+  color: $bk-black !important;
+}
+
+.bk-white {
+  color: $bk-white !important;
+}
+
+// RED 300, RED (SECONDARY COLOR)
+.bk-error {
+  color: $bk-error !important;
+}
+
+// GREEN 500, GREEN (SECONDARY COLOR)
+.bk-success {
+  color: $bk-success !important;
+}
+
+// ORANGE 300, ORANGE (SECONDARY COLOR)
+.bk-warning {
+  color: $bk-warning !important;
+}
+
+// BLUE 400
+.bk-info {
+  color: $bk-info !important;
+}
+
+/********************
+PRIMARY COLORS
+********************/
+
+// BLUE 600
+.bk-blue {
+  color: $bk-blue !important;
+}
+
+// TEAL 600
+.bk-teal {
+  color: $bk-teal !important;
+}
+
+// GRAY 800
+.bk-gray {
+  color: $bk-gray !important;
+}
+
+/********************
+SECONDARY COLORS
+********************/
+
+// PINK 200
+.bk-pink {
+  color: $bk-pink !important;
+}
+
+// PURPLE 300
+.bk-purple {
+  color: $bk-purple !important;
+}
+
+// LIME 300
+.bk-lime {
+  color: $bk-lime !important;
+}
+
+// YELLOW 200
+.bk-yellow {
+  color: $bk-yellow !important;
+}
+
+// DO NOT ADD .bk-green, USE .bk-success
+
+// DO NOT ADD .bk-orange, USE .bk-warning
+
+// DO NOT ADD .bk-red, USE .bk-error
+
+/********************
+BLACK
+********************/
+.bk-black-20 {
+  color: rgba($bk-black, 0.2) !important;
+}
+
+.bk-black-30 {
+  color: rgba($bk-black, 0.3) !important;
+}
+
+.bk-black-50 {
+  color: rgba($bk-black, 0.5) !important;
+}
+
+.bk-black-80 {
+  color: rgba($bk-black, 0.8) !important;
+}
+
+/********************
+GRAY SCALE
+********************/
+
+.bk-gray-25 {
+  color: $bk-gray-25 !important;
+}
+
+.bk-gray-50 {
+  color: $bk-gray-50 !important;
+}
+
+.bk-gray-75 {
+  color: $bk-gray-75 !important;
+}
+
+.bk-gray-100 {
+  color: $bk-gray-100 !important;
+}
+
+.bk-gray-200 {
+  color: $bk-gray-200 !important;
+}
+
+.bk-gray-300 {
+  color: $bk-gray-300 !important;
+}
+
+.bk-gray-400 {
+  color: $bk-gray-400 !important;
+}
+
+.bk-gray-500 {
+  color: $bk-gray-500 !important;
+}
+
+.bk-gray-600 {
+  color: $bk-gray-600 !important;
+}
+
+.bk-gray-700 {
+  color: $bk-gray-700 !important;
+}
+
+// DO NOT ADD .bk-gray-800, USE .bk-gray
+
+.bk-gray-900 {
+  color: $bk-gray-900 !important;
+}
+
+/********************
+BLUE (PRIMARY)
+********************/
+
+.bk-blue-25 {
+  color: $bk-blue-25 !important;
+}
+
+.bk-blue-50 {
+  color: $bk-blue-50 !important;
+}
+
+.bk-blue-75 {
+  color: $bk-blue-75 !important;
+}
+
+.bk-blue-100 {
+  color: $bk-blue-100 !important;
+}
+
+.bk-blue-200 {
+  color: $bk-blue-200 !important;
+}
+
+.bk-blue-300 {
+  color: $bk-blue-300 !important;
+}
+
+// DO NOT ADD .bk-blue-400, USE .bk-info
+
+.bk-blue-500 {
+  color: $bk-blue-500 !important;
+}
+
+// DO NOT ADD .bk-blue-600, USE .bk-blue
+
+.bk-blue-700 {
+  color: $bk-blue-700 !important;
+}
+
+.bk-blue-800 {
+  color: $bk-blue-800 !important;
+}
+
+.bk-blue-900 {
+  color: $bk-blue-900 !important;
+}
+
+/********************
+TEAL (SECONDARY)
+********************/
+
+.bk-teal-25 {
+  color: $bk-teal-25 !important;
+}
+
+.bk-teal-50 {
+  color: $bk-teal-50 !important;
+}
+
+.bk-teal-75 {
+  color: $bk-teal-75 !important;
+}
+
+.bk-teal-100 {
+  color: $bk-teal-100 !important;
+}
+
+.bk-teal-200 {
+  color: $bk-teal-200 !important;
+}
+
+.bk-teal-300 {
+  color: $bk-teal-300 !important;
+}
+
+.bk-teal-400 {
+  color: $bk-teal-400 !important;
+}
+
+.bk-teal-500 {
+  color: $bk-teal-500 !important;
+}
+
+// DO NOT ADD .bk-teal-600, use .bk-teal
+
+.bk-teal-700 {
+  color: $bk-teal-700 !important;
+}
+
+.bk-teal-800 {
+  color: $bk-teal-800 !important;
+}
+
+.bk-teal-900 {
+  color: $bk-teal-900 !important;
+}
+
+/********************
+RED (ERRORS)
+********************/
+
+.bk-red-25 {
+  color: $bk-red-25 !important;
+}
+
+.bk-red-50 {
+  color: $bk-red-50 !important;
+}
+
+.bk-red-75 {
+  color: $bk-red-75 !important;
+}
+
+.bk-red-100 {
+  color: $bk-red-100 !important;
+}
+
+.bk-red-200 {
+  color: $bk-red-200 !important;
+}
+
+// DO NOT ADD .bk-red-300, use .bk-error
+
+.bk-red-400 {
+  color: $bk-red-400 !important;
+}
+
+.bk-red-500 {
+  color: $bk-red-500 !important;
+}
+
+.bk-red-600 {
+  color: $bk-red-600 !important;
+}
+
+.bk-red-700 {
+  color: $bk-red-700 !important;
+}
+
+.bk-red-800 {
+  color: $bk-red-800 !important;
+}
+
+.bk-red-900 {
+  color: $bk-red-900 !important;
+}
+
+/********************
+PINK
+********************/
+
+.bk-pink-25 {
+  color: $bk-pink-25 !important;
+}
+
+.bk-pink-50 {
+  color: $bk-pink-50 !important;
+}
+
+.bk-pink-75 {
+  color: $bk-pink-75 !important;
+}
+
+.bk-pink-100 {
+  color: $bk-pink-100 !important;
+}
+
+// DOT NOT ADD .bk-pink-200, USE .bk-pink
+
+.bk-pink-300 {
+  color: $bk-pink-300 !important;
+}
+
+.bk-pink-400 {
+  color: $bk-pink-400 !important;
+}
+
+.bk-pink-500 {
+  color: $bk-pink-500 !important;
+}
+
+.bk-pink-600 {
+  color: $bk-pink-600 !important;
+}
+
+.bk-pink-700 {
+  color: $bk-pink-700 !important;
+}
+
+.bk-pink-800 {
+  color: $bk-pink-800 !important;
+}
+
+.bk-pink-900 {
+  color: $bk-pink-900 !important;
+}
+
+/********************
+PURPLE
+********************/
+
+.bk-purple-25 {
+  color: $bk-purple-25 !important;
+}
+
+.bk-purple-50 {
+  color: $bk-purple-50 !important;
+}
+
+.bk-purple-75 {
+  color: $bk-purple-75 !important;
+}
+
+.bk-purple-100 {
+  color: $bk-purple-100 !important;
+}
+
+.bk-purple-200 {
+  color: $bk-purple-200 !important;
+}
+
+// DO NOT ADD .bk-purple-300, USE .bk-purple
+
+.bk-purple-400 {
+  color: $bk-purple-400 !important;
+}
+
+.bk-purple-500 {
+  color: $bk-purple-500 !important;
+}
+
+.bk-purple-600 {
+  color: $bk-purple-600 !important;
+}
+
+.bk-purple-700 {
+  color: $bk-purple-700 !important;
+}
+
+.bk-purple-800 {
+  color: $bk-purple-800 !important;
+}
+
+.bk-purple-900 {
+  color: $bk-purple-900 !important;
+}
+
+/********************
+GREEN
+********************/
+
+.bk-green-25 {
+  color: $bk-green-25 !important;
+}
+
+.bk-green-50 {
+  color: $bk-green-50 !important;
+}
+
+.bk-green-75 {
+  color: $bk-green-75 !important;
+}
+
+.bk-green-100 {
+  color: $bk-green-100 !important;
+}
+
+.bk-green-200 {
+  color: $bk-green-200 !important;
+}
+
+.bk-green-300 {
+  color: $bk-green-300 !important;
+}
+
+.bk-green-400 {
+  color: $bk-green-400 !important;
+}
+
+// DO NOT ADD .bk-green-500, USE .bk-success
+
+.bk-green-600 {
+  color: $bk-green-600 !important;
+}
+
+.bk-green-700 {
+  color: $bk-green-700 !important;
+}
+
+.bk-green-800 {
+  color: $bk-green-800 !important;
+}
+
+.bk-green-900 {
+  color: $bk-green-900 !important;
+}
+
+/********************
+LIME
+********************/
+
+.bk-lime-25 {
+  color: $bk-lime-25 !important;
+}
+
+.bk-lime-50 {
+  color: $bk-lime-50 !important;
+}
+
+.bk-lime-75 {
+  color: $bk-lime-75 !important;
+}
+
+.bk-lime-100 {
+  color: $bk-lime-100 !important;
+}
+
+.bk-lime-200 {
+  color: $bk-lime-200 !important;
+}
+
+// DO NOT ADD .bk-lime-300, USE .bk-lime
+
+.bk-lime-400 {
+  color: $bk-lime-400 !important;
+}
+
+.bk-lime-500 {
+  color: $bk-lime-500 !important;
+}
+
+.bk-lime-600 {
+  color: $bk-lime-600 !important;
+}
+
+.bk-lime-700 {
+  color: $bk-lime-700 !important;
+}
+
+.bk-lime-800 {
+  color: $bk-lime-800 !important;
+}
+
+.bk-lime-900 {
+  color: $bk-lime-900 !important;
+}
+
+/********************
+ORANGE
+********************/
+
+.bk-orange-25 {
+  color: $bk-orange-25 !important;
+}
+
+.bk-orange-50 {
+  color: $bk-orange-50 !important;
+}
+
+.bk-orange-75 {
+  color: $bk-orange-75 !important;
+}
+
+.bk-orange-100 {
+  color: $bk-orange-100 !important;
+}
+
+.bk-orange-200 {
+  color: $bk-orange-200 !important;
+}
+
+// DO NOT ADD .bk-orange-300, USE .bk-warning
+
+.bk-orange-400 {
+  color: $bk-orange-400 !important;
+}
+
+.bk-orange-500 {
+  color: $bk-orange-500 !important;
+}
+
+.bk-orange-600 {
+  color: $bk-orange-600 !important;
+}
+
+.bk-orange-700 {
+  color: $bk-orange-700 !important;
+}
+
+.bk-orange-800 {
+  color: $bk-orange-800 !important;
+}
+
+.bk-orange-900 {
+  color: $bk-orange-900 !important;
+}
+
+/********************
+YELLOW
+********************/
+
+.bk-yellow-25 {
+  color: $bk-yellow-25 !important;
+}
+
+.bk-yellow-50 {
+  color: $bk-yellow-50 !important;
+}
+
+.bk-yellow-75 {
+  color: $bk-yellow-75 !important;
+}
+
+.bk-yellow-100 {
+  color: $bk-yellow-100 !important;
+}
+
+// DO NOT ADD .bk-yellow-200, USE .bk-yellow
+
+.bk-yellow-300 {
+  color: $bk-yellow-300 !important;
+}
+
+.bk-yellow-400 {
+  color: $bk-yellow-400 !important;
+}
+
+.bk-yellow-500 {
+  color: $bk-yellow-500 !important;
+}
+
+.bk-yellow-600 {
+  color: $bk-yellow-600 !important;
+}
+
+.bk-yellow-700 {
+  color: $bk-yellow-700 !important;
+}
+
+.bk-yellow-800 {
+  color: $bk-yellow-800 !important;
+}
+
+.bk-yellow-900 {
+  color: $bk-yellow-900 !important;
+}

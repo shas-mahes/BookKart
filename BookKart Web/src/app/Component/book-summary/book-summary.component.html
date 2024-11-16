@@ -1,0 +1,101 @@
+<h2 mat-dialog-title>{{ book.Title }}</h2>
+<mat-dialog-content>
+  <mat-card class="book-summary-card">
+    <mat-card-header class="bk-white bk-bg-blue-800">
+      <mat-card-title class="mat-h1">Book Deatils</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row g-0 d-flex p-3 justify-content-around">
+        <div class="col-md-3 d-flex">
+          <img
+            mat-card-image
+            src="../../../assets/img/{{ book.CoverFileName }}.jpg"
+            alt="Book Cover Image"
+            class="rounded img-effects"
+          />
+        </div>
+        <div class="col-md-5 d-flex flex-column">
+          <table class="table table-lg">
+            <tbody>
+              <tr>
+                <td><strong>Title</strong></td>
+                <td>{{ book.Title }}</td>
+              </tr>
+              <tr>
+                <td><strong>Author</strong></td>
+                <td>{{ book.Author }}</td>
+              </tr>
+              <tr>
+                <td><strong>Category</strong></td>
+                <td>{{ book.Category.Categories }}</td>
+              </tr>
+              <tr>
+                <td><strong>Price</strong></td>
+                <td>&#8377;{{ book.Price }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="book-summary-card mt-3">
+    <mat-card-content>
+      <button mat-raised-button class="bk-bg-gray-900 bk-white">
+        <span
+          ><img
+            class="gemini-icon"
+            src="https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg"
+        /></span>
+        Generate Book Summary using Google Gemini
+      </button>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="book-summary-card mt-3">
+    <mat-card-header class="bk-white bk-bg-blue-800">
+      <mat-card-title class="mat-h1">Similar Books</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="col row">
+        <div
+          class="d-flex justify-content-start card-deck-container mb-4 ps-5 ms-3"
+        >
+          @for (book of suggestedBooks; track $index) {
+          <mat-card class="book-card m-3">
+            <img
+              mat-card-image
+              src="../../../assets/img/{{ book.CoverFileName }}.jpg"
+              alt="Book Cover Image"
+              class="rounded book-cover"
+            />
+            <button
+              class="custom-button bk-bg-white"
+              (click)="openBookDetails(book)"
+            >
+              <mat-card-content class="pt-2 pb-2">
+                <p class="h6">{{ book.Title }}</p>
+                <p>&#8377;{{ book.Price }}</p>
+              </mat-card-content>
+            </button>
+            <mat-card-actions>
+              <button
+                mat-raised-button
+                color="primary m-auto"
+                (click)="addToCart(book)"
+              >
+                <mat-icon>shopping_cart</mat-icon>Add to Cart
+              </button>
+            </mat-card-actions>
+          </mat-card>
+          }
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+  <button mat-raised-button mat-dialog-close>Close</button>
+  <button mat-flat-button color="primary">
+    <mat-icon>shopping_cart</mat-icon>Add to Cart
+  </button>
+</mat-dialog-actions>

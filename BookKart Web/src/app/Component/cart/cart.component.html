@@ -1,0 +1,156 @@
+<div class="m-auto w-75">
+  <p class="bk-font-size-32 fw-bold mt-5">Cart</p>
+  <div class="row">
+    <div class="col-5 fw-bold">
+      <span>{{ booksInCart.length }}</span> items
+    </div>
+    <div class="col-5 ms-5">
+      <button
+        mat-button
+        color="warn"
+        (click)="emptyCart()"
+        [disabled]="booksInCart.length === 0"
+      >
+        <mat-icon>delete</mat-icon>Empty Cart
+      </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="m-auto">
+        @for (cart of booksInCart; track $index) {
+        <mat-card class="m-2">
+          <mat-card-content class="pt-0 pb-0">
+            <div class="row">
+              <div class="col-2 mt-3 mb-3">
+                <img
+                  mat-card-sm-image
+                  src="../../../assets/img/{{ cart.Books.CoverFileName }}.jpg"
+                  alt="Book Cover Image"
+                  class="rounded"
+                />
+              </div>
+              <div class="col-5 d-flex justify-content-center flex-column">
+                <p class="bk-font-size-14 fw-bold mb-1">
+                  {{ cart.Books.Title }}
+                </p>
+                <p class="bk-font-size-12 mb-1">{{ cart.Books.Author }}</p>
+                <button
+                  mat-stroked-button
+                  class="mat-badge bk-bg-blue-50 bk-blue-500"
+                >
+                  {{ cart.Books.Category.Categories }}
+                </button>
+              </div>
+              <div class="col-3 d-flex align-items-center">
+                <div class="wrapper">
+                  <button
+                    class="plusminus"
+                    (click)="removeBookQuantity(cart)"
+                    [disabled]="cart.Quantity == 1"
+                  >
+                    <span class="bk-font-size-18">-</span>
+                  </button>
+                  <input
+                    matInput
+                    type="number"
+                    value="{{ cart.Quantity }}"
+                    readonly
+                    class="num"
+                  />
+                  <button class="plusminus" (click)="addBookQuantity(cart)">
+                    <span class="bk-font-size-18">+</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-1 d-flex flex-column mt-2 mb-1">
+                <p class="bk-font-size-18 fw-bold">
+                  &#8377;{{ cart.Books.Price }}.00
+                </p>
+                <button
+                  mat-button
+                  color="warn"
+                  class="mt-auto"
+                  (click)="removeBook(cart)"
+                >
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+        }
+      </div>
+    </div>
+    <div class="col-md-5">
+      <mat-card class="m-2">
+        <mat-card-content>
+          <div class="border-bottom border-3">
+            @for (cart of booksInCart; track $index) {
+            <div class="d-flex">
+              <p>X{{ cart.Quantity }} {{ cart.Books.Title }}</p>
+              <p class="ms-auto">
+                &#8377;{{ cart.Books.Price * cart.Quantity }}.00
+              </p>
+            </div>
+            } @if (booksInCart.length) {
+            <div class="d-flex">
+              <p>Shipping</p>
+              <p class="ms-auto bk-success">Free</p>
+            </div>
+            }
+          </div>
+          <div>
+            <button mat-button color="primary" (click)="isExpanded()">
+              <p class="mb-0">I have a promocode</p>
+              <mat-icon>
+                {{ havePromo ? "expand_more" : "chevron_right" }}</mat-icon
+              >
+            </button>
+            @if (havePromo) {
+            <div class="d-flex">
+              <form>
+                <mat-form-field class="bk-bg-white">
+                  <mat-label>Promo Code</mat-label>
+                  <input
+                    type="text"
+                    matInput
+                    [formControl]="promoCodeForm"
+                    placeholder="Promo Code"
+                  />
+                  @if (promoCodevalid) {
+                  <mat-error>Promo Code is not valid</mat-error>
+                  }
+                </mat-form-field>
+              </form>
+              <button
+                mat-raised-button
+                color="primary"
+                class="m-3"
+                (click)="promoCodevalid = !promoCodevalid"
+                [disabled]="promoCodeForm.value == ''"
+              >
+                Apply
+              </button>
+            </div>
+            }
+          </div>
+          <div class="d-flex bk-font-size-24 fw-bold">
+            <p>Total</p>
+            <p class="ms-auto">&#8377;{{ totalCartValue }}</p>
+          </div>
+          <div>
+            <button
+              mat-raised-button
+              color="primary"
+              class="w-100"
+              [disabled]="!booksInCart.length"
+            >
+              Checkout
+            </button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

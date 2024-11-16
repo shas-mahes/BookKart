@@ -1,0 +1,37 @@
+@import '../../../styles/color-variable';
+
+button.mat-badge {
+    height: 18px!important;
+    // padding: 0 8px 0 8px;
+    font-size: 10px!important;
+    width: fit-content !important;
+}
+
+img {
+    height: 100px;
+}
+
+input {
+    text-align: center;
+}
+
+.wrapper {
+    border: 2px $bk-gray-100 solid;
+    width: 90px;
+    height: 35px;
+    display: flex;
+    padding: 4px;
+    border-radius: 5px;
+    justify-content: center;
+  }
+  
+  .plusminus {
+    height: 100%;
+    background: $bk-white;
+    border: none;
+  }
+  
+  .num {
+    border: none !important;
+    width: 40px;
+  }

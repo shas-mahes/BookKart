@@ -1,0 +1,56 @@
+td {
+  border-top: 0;
+  border-bottom: 1px solid #dee2e6;
+  width: 30%;
+  padding: 20px;
+}
+
+td:nth-child(2) {
+  width: 70%;
+}
+
+.img-effects {
+  height: 350px;
+  width: 300px;
+  transition: transform 0.5s;
+}
+
+.img-effects:hover {
+  transform: scale(1.5);
+}
+
+.book-summary-card {
+  max-width: inherit !important;
+  min-width: inherit !important;
+  max-height: 80vw !important;
+  min-height: fit-content !important;
+}
+
+.gemini-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.custom-button {
+  border: none !important;
+}
+
+.card-deck-container {
+  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-flex: 1;
+  -ms-box-flex: 1;
+  -moz-box-flex: 1;
+  width: 100%;
+}
+
+.book-card {
+  min-width: 200px;
+  max-width: 220px;
+  max-height: 400px;
+}

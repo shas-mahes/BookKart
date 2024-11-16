@@ -1,0 +1,580 @@
+@import 'color-variable';
+
+/********************
+BASE COLORS
+********************/
+
+.bk-bg-black {
+  background-color: $bk-black !important;
+}
+
+.bk-bg-white {
+  background-color: $bk-white !important;
+}
+
+// RED 300, RED (SECONDARY COLOR)
+.bk-bg-error {
+  background-color: $bk-error !important;
+}
+
+// GREEN 500, GREEN (SECONDARY COLOR)
+.bk-bg-success {
+  background-color: $bk-success !important;
+}
+
+// ORANGE 300, ORANGE (SECONDARY COLOR)
+.bk-bg-warning {
+  background-color: $bk-warning !important;
+}
+
+// BLUE 400
+.bk-bg-info {
+  background-color: $bk-info !important;
+}
+
+/********************
+PRIMARY COLORS
+********************/
+
+// BLUE 600
+.bk-bg-blue {
+  background-color: $bk-blue !important;
+}
+
+// TEAL 600
+.bk-bg-teal {
+  background-color: $bk-teal !important;
+}
+
+// GRAY 800
+.bk-bg-gray {
+  background-color: $bk-gray !important;
+}
+
+/********************
+SECONDARY COLORS
+********************/
+
+// PINK 200
+.bk-bg-pink {
+  background-color: $bk-pink !important;
+}
+
+// PURPLE 300
+.bk-bg-purple {
+  background-color: $bk-purple !important;
+}
+
+// LIME 300
+.bk-bg-lime {
+  background-color: $bk-lime !important;
+}
+
+// YELLOW 200
+.bk-bg-yellow {
+  background-color: $bk-yellow !important;
+}
+
+// DO NOT ADD .bk-bg-green, USE .bk-bg-success
+
+// DO NOT ADD .bk-bg-orange, USE .bk-bg-warning
+
+// DO NOT ADD .bk-bg-red, USE .bk-bg-error
+
+/********************
+GRAY SCALE
+********************/
+
+.bk-bg-gray-25 {
+  background-color: $bk-gray-25 !important;
+}
+
+.bk-bg-gray-50 {
+  background-color: $bk-gray-50 !important;
+}
+
+.bk-bg-gray-75 {
+  background-color: $bk-gray-75 !important;
+}
+
+.bk-bg-gray-100 {
+  background-color: $bk-gray-100 !important;
+}
+
+.bk-bg-gray-200 {
+  background-color: $bk-gray-200 !important;
+}
+
+.bk-bg-gray-300 {
+  background-color: $bk-gray-300 !important;
+}
+
+.bk-bg-gray-400 {
+  background-color: $bk-gray-400 !important;
+}
+
+.bk-bg-gray-500 {
+  background-color: $bk-gray-500 !important;
+}
+
+.bk-bg-gray-600 {
+  background-color: $bk-gray-600 !important;
+}
+
+.bk-bg-gray-700 {
+  background-color: $bk-gray-700 !important;
+}
+
+// DO NOT ADD .bk-bg-gray-800, USE .bk-bg-gray
+
+.bk-bg-gray-900 {
+  background-color: $bk-gray-900 !important;
+}
+
+/********************
+BLUE (PRIMARY)
+********************/
+
+.bk-bg-blue-25 {
+  background-color: $bk-blue-25 !important;
+}
+
+.bk-bg-blue-50 {
+  background-color: $bk-blue-50 !important;
+}
+
+.bk-bg-blue-75 {
+  background-color: $bk-blue-75 !important;
+}
+
+.bk-bg-blue-100 {
+  background-color: $bk-blue-100 !important;
+}
+
+.bk-bg-blue-200 {
+  background-color: $bk-blue-200 !important;
+}
+
+.bk-bg-blue-300 {
+  background-color: $bk-blue-300 !important;
+}
+
+// DO NOT ADD .bk-bg-blue-400, USE .bk-bg-info
+
+.bk-bg-blue-500 {
+  background-color: $bk-blue-500 !important;
+}
+
+// DO NOT ADD .bk-bg-blue-600, USE .bk-bg-blue
+
+.bk-bg-blue-700 {
+  background-color: $bk-blue-700 !important;
+}
+
+.bk-bg-blue-800 {
+  background-color: $bk-blue-800 !important;
+}
+
+.bk-bg-blue-900 {
+  background-color: $bk-blue-900 !important;
+}
+
+/********************
+TEAL (SECONDARY)
+********************/
+
+.bk-bg-teal-25 {
+  background-color: $bk-teal-25 !important;
+}
+
+.bk-bg-teal-50 {
+  background-color: $bk-teal-50 !important;
+}
+
+.bk-bg-teal-75 {
+  background-color: $bk-teal-75 !important;
+}
+
+.bk-bg-teal-100 {
+  background-color: $bk-teal-100 !important;
+}
+
+.bk-bg-teal-200 {
+  background-color: $bk-teal-200 !important;
+}
+
+.bk-bg-teal-300 {
+  background-color: $bk-teal-300 !important;
+}
+
+.bk-bg-teal-400 {
+  background-color: $bk-teal-400 !important;
+}
+
+.bk-bg-teal-500 {
+  background-color: $bk-teal-500 !important;
+}
+
+// DO NOT ADD .bk-bg-teal-600, use .bk-bg-teal
+
+.bk-bg-teal-700 {
+  background-color: $bk-teal-700 !important;
+}
+
+.bk-bg-teal-800 {
+  background-color: $bk-teal-800 !important;
+}
+
+.bk-bg-teal-900 {
+  background-color: $bk-teal-900 !important;
+}
+
+/********************
+RED (ERRORS)
+********************/
+
+.bk-bg-red-25 {
+  background-color: $bk-red-25 !important;
+}
+
+.bk-bg-red-50 {
+  background-color: $bk-red-50 !important;
+}
+
+.bk-bg-red-75 {
+  background-color: $bk-red-75 !important;
+}
+
+.bk-bg-red-100 {
+  background-color: $bk-red-100 !important;
+}
+
+.bk-bg-red-200 {
+  background-color: $bk-red-200 !important;
+}
+
+// DO NOT ADD .bk-bg-red-300, use .bk-bg-error
+
+.bk-bg-red-400 {
+  background-color: $bk-red-400 !important;
+}
+
+.bk-bg-red-500 {
+  background-color: $bk-red-500 !important;
+}
+
+.bk-bg-red-600 {
+  background-color: $bk-red-600 !important;
+}
+
+.bk-bg-red-700 {
+  background-color: $bk-red-700 !important;
+}
+
+.bk-bg-red-800 {
+  background-color: $bk-red-800 !important;
+}
+
+.bk-bg-red-900 {
+  background-color: $bk-red-900 !important;
+}
+
+/********************
+PINK
+********************/
+
+.bk-bg-pink-25 {
+  background-color: $bk-pink-25 !important;
+}
+
+.bk-bg-pink-50 {
+  background-color: $bk-pink-50 !important;
+}
+
+.bk-bg-pink-75 {
+  background-color: $bk-pink-75 !important;
+}
+
+.bk-bg-pink-100 {
+  background-color: $bk-pink-100 !important;
+}
+
+// DOT NOT ADD .bk-bg-pink-200, USE .bk-bg-pink
+
+.bk-bg-pink-300 {
+  background-color: $bk-pink-300 !important;
+}
+
+.bk-bg-pink-400 {
+  background-color: $bk-pink-400 !important;
+}
+
+.bk-bg-pink-500 {
+  background-color: $bk-pink-500 !important;
+}
+
+.bk-bg-pink-600 {
+  background-color: $bk-pink-600 !important;
+}
+
+.bk-bg-pink-700 {
+  background-color: $bk-pink-700 !important;
+}
+
+.bk-bg-pink-800 {
+  background-color: $bk-pink-800 !important;
+}
+
+.bk-bg-pink-900 {
+  background-color: $bk-pink-900 !important;
+}
+
+/********************
+PURPLE
+********************/
+
+.bk-bg-purple-25 {
+  background-color: $bk-purple-25 !important;
+}
+
+.bk-bg-purple-50 {
+  background-color: $bk-purple-50 !important;
+}
+
+.bk-bg-purple-75 {
+  background-color: $bk-purple-75 !important;
+}
+
+.bk-bg-purple-100 {
+  background-color: $bk-purple-100 !important;
+}
+
+.bk-bg-purple-200 {
+  background-color: $bk-purple-200 !important;
+}
+
+// DO NOT ADD .bk-bg-purple-300, USE .bk-bg-purple
+
+.bk-bg-purple-400 {
+  background-color: $bk-purple-400 !important;
+}
+
+.bk-bg-purple-500 {
+  background-color: $bk-purple-500 !important;
+}
+
+.bk-bg-purple-600 {
+  background-color: $bk-purple-600 !important;
+}
+
+.bk-bg-purple-700 {
+  background-color: $bk-purple-700 !important;
+}
+
+.bk-bg-purple-800 {
+  background-color: $bk-purple-800 !important;
+}
+
+.bk-bg-purple-900 {
+  background-color: $bk-purple-900 !important;
+}
+
+/********************
+GREEN
+********************/
+
+.bk-bg-green-25 {
+  background-color: $bk-green-25 !important;
+}
+
+.bk-bg-green-50 {
+  background-color: $bk-green-50 !important;
+}
+
+.bk-bg-green-75 {
+  background-color: $bk-green-75 !important;
+}
+
+.bk-bg-green-100 {
+  background-color: $bk-green-100 !important;
+}
+
+.bk-bg-green-200 {
+  background-color: $bk-green-200 !important;
+}
+
+.bk-bg-green-300 {
+  background-color: $bk-green-300 !important;
+}
+
+.bk-bg-green-400 {
+  background-color: $bk-green-400 !important;
+}
+
+// DO NOT ADD .bk-bg-green-500, USE .bk-bg-success
+
+.bk-bg-green-600 {
+  background-color: $bk-green-600 !important;
+}
+
+.bk-bg-green-700 {
+  background-color: $bk-green-700 !important;
+}
+
+.bk-bg-green-800 {
+  background-color: $bk-green-800 !important;
+}
+
+.bk-bg-green-900 {
+  background-color: $bk-green-900 !important;
+}
+
+/********************
+LIME
+********************/
+
+.bk-bg-lime-25 {
+  background-color: $bk-lime-25 !important;
+}
+
+.bk-bg-lime-50 {
+  background-color: $bk-lime-50 !important;
+}
+
+.bk-bg-lime-75 {
+  background-color: $bk-lime-75 !important;
+}
+
+.bk-bg-lime-100 {
+  background-color: $bk-lime-100 !important;
+}
+
+.bk-bg-lime-200 {
+  background-color: $bk-lime-200 !important;
+}
+
+// DO NOT ADD .bk-bg-lime-300, USE .bk-bg-lime
+
+.bk-bg-lime-400 {
+  background-color: $bk-lime-400 !important;
+}
+
+.bk-bg-lime-500 {
+  background-color: $bk-lime-500 !important;
+}
+
+.bk-bg-lime-600 {
+  background-color: $bk-lime-600 !important;
+}
+
+.bk-bg-lime-700 {
+  background-color: $bk-lime-700 !important;
+}
+
+.bk-bg-lime-800 {
+  background-color: $bk-lime-800 !important;
+}
+
+.bk-bg-lime-900 {
+  background-color: $bk-lime-900 !important;
+}
+
+/********************
+ORANGE
+********************/
+
+.bk-bg-orange-25 {
+  background-color: $bk-orange-25 !important;
+}
+
+.bk-bg-orange-50 {
+  background-color: $bk-orange-50 !important;
+}
+
+.bk-bg-orange-75 {
+  background-color: $bk-orange-75 !important;
+}
+
+.bk-bg-orange-100 {
+  background-color: $bk-orange-100 !important;
+}
+
+.bk-bg-orange-200 {
+  background-color: $bk-orange-200 !important;
+}
+
+// DO NOT ADD .bk-bg-orange-300, USE .bk-bg-warning
+
+.bk-bg-orange-400 {
+  background-color: $bk-orange-400 !important;
+}
+
+.bk-bg-orange-500 {
+  background-color: $bk-orange-500 !important;
+}
+
+.bk-bg-orange-600 {
+  background-color: $bk-orange-600 !important;
+}
+
+.bk-bg-orange-700 {
+  background-color: $bk-orange-700 !important;
+}
+
+.bk-bg-orange-800 {
+  background-color: $bk-orange-800 !important;
+}
+
+.bk-bg-orange-900 {
+  background-color: $bk-orange-900 !important;
+}
+
+/********************
+YELLOW
+********************/
+
+.bk-bg-yellow-25 {
+  background-color: $bk-yellow-25 !important;
+}
+
+.bk-bg-yellow-50 {
+  background-color: $bk-yellow-50 !important;
+}
+
+.bk-bg-yellow-75 {
+  background-color: $bk-yellow-75 !important;
+}
+
+.bk-bg-yellow-100 {
+  background-color: $bk-yellow-100 !important;
+}
+
+// DO NOT ADD .bk-bg-yellow-200, USE .bk-bg-yellow
+
+.bk-bg-yellow-300 {
+  background-color: $bk-yellow-300 !important;
+}
+
+.bk-bg-yellow-400 {
+  background-color: $bk-yellow-400 !important;
+}
+
+.bk-bg-yellow-500 {
+  background-color: $bk-yellow-500 !important;
+}
+
+.bk-bg-yellow-600 {
+  background-color: $bk-yellow-600 !important;
+}
+
+.bk-bg-yellow-700 {
+  background-color: $bk-yellow-700 !important;
+}
+
+.bk-bg-yellow-800 {
+  background-color: $bk-yellow-800 !important;
+}
+
+.bk-bg-yellow-900 {
+  background-color: $bk-yellow-900 !important;
+}

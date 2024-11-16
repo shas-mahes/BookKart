@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookKart.API", "BookKart\BookKart.API.csproj", "{C776EC18-CB66-4C37-BCBB-B5F8EFE24F74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookKart.Core.Domain", "BookKart.Core.Domain\BookKart.Core.Domain.csproj", "{571C89F7-082D-4AD2-A88D-3233F2D9E3CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{829096D8-D711-4977-AB4A-3A86059BE6B7} = {829096D8-D711-4977-AB4A-3A86059BE6B7}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookKart.Core.Application", "BookKart.Core.Application\BookKart.Core.Application.csproj", "{829096D8-D711-4977-AB4A-3A86059BE6B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookKart.Core.Infrastructure", "BookKart.Core.Infrastructure\BookKart.Core.Infrastructure.csproj", "{E764A32B-2C8F-4640-9FEF-E24FB92B0E2B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{571C89F7-082D-4AD2-A88D-3233F2D9E3CD} = {571C89F7-082D-4AD2-A88D-3233F2D9E3CD}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookKart.Service", "BookKart.Service\BookKart.Service.csproj", "{6336B18B-E384-4A91-8AAB-A0218222DD19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C776EC18-CB66-4C37-BCBB-B5F8EFE24F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C776EC18-CB66-4C37-BCBB-B5F8EFE24F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C776EC18-CB66-4C37-BCBB-B5F8EFE24F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C776EC18-CB66-4C37-BCBB-B5F8EFE24F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{571C89F7-082D-4AD2-A88D-3233F2D9E3CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{571C89F7-082D-4AD2-A88D-3233F2D9E3CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{571C89F7-082D-4AD2-A88D-3233F2D9E3CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{571C89F7-082D-4AD2-A88D-3233F2D9E3CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829096D8-D711-4977-AB4A-3A86059BE6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829096D8-D711-4977-AB4A-3A86059BE6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829096D8-D711-4977-AB4A-3A86059BE6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829096D8-D711-4977-AB4A-3A86059BE6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E764A32B-2C8F-4640-9FEF-E24FB92B0E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E764A32B-2C8F-4640-9FEF-E24FB92B0E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E764A32B-2C8F-4640-9FEF-E24FB92B0E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E764A32B-2C8F-4640-9FEF-E24FB92B0E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6336B18B-E384-4A91-8AAB-A0218222DD19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6336B18B-E384-4A91-8AAB-A0218222DD19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6336B18B-E384-4A91-8AAB-A0218222DD19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6336B18B-E384-4A91-8AAB-A0218222DD19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {337E54F8-DD68-40A3-8A01-300F7C58B2F0}
+	EndGlobalSection
+EndGlobal

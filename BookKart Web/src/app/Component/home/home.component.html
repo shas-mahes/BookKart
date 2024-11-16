@@ -1,0 +1,53 @@
+<div class="row no-gutters m-3">
+  <div class="col-md-3 pt-3 ps-5">
+    <mat-nav-list class="mat-elevation-z8 bk-bg-white">
+      <mat-list-item
+        [class.active-category]="!category"
+        (click)="categoryFilter('')"
+      >
+        <a>All Categories</a>
+      </mat-list-item>
+      @for (c of categories; track $index) {
+      <mat-list-item
+        [class.active-category]="category === c.Categories"
+        (click)="categoryFilter(c.Categories)"
+      >
+        <a>{{ c.Categories }}</a>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+      }
+    </mat-nav-list>
+  </div>
+  <div class="col">
+    <div class="d-flex justify-content-start card-deck-container m-auto">
+      @for (book of books; track $index) {
+      <mat-card class="book-card m-3">
+        <img
+          mat-card-image
+          src="../../../assets/img/{{ book.CoverFileName }}.jpg"
+          alt="Book Cover Image"
+          class="rounded book-cover"
+        />
+        <button
+          class="custom-button bk-bg-white"
+          (click)="openBookDetails(book)"
+        >
+          <mat-card-content class="pt-2 pb-2">
+            <p class="h6">{{ book.Title }}</p>
+            <p>&#8377;{{ book.Price }}</p>
+          </mat-card-content>
+        </button>
+        <mat-card-actions>
+          <button
+            mat-raised-button
+            color="primary m-auto"
+            (click)="addToCart(book)"
+          >
+            <mat-icon>shopping_cart</mat-icon>Add to Cart
+          </button>
+        </mat-card-actions>
+      </mat-card>
+      }
+    </div>
+  </div>
+</div>

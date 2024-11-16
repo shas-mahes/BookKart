@@ -1,0 +1,15 @@
+@mixin bk-font-weight-light {
+  font-weight: 300;
+}
+
+@mixin bk-font-weight-medium {
+  font-weight: 500;
+}
+
+@mixin bk-font-weight-regular {
+  font-weight: 400;
+}
+
+@mixin bk-font-weight-bold {
+  font-weight: 700;
+}

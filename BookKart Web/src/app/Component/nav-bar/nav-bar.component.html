@@ -1,0 +1,62 @@
+<mat-toolbar class="app-toolbar border-bottom">
+  <mat-toolbar-row>
+    <button mat-flat-button color="primary" (click)="goToHome()">
+      <mat-icon>book</mat-icon> Book Kart
+    </button>
+
+    <div style="margin: auto">
+      <mat-form-field style="width: 30em">
+        <mat-label>Search</mat-label>
+        <input
+          (keydown.enter)="searchStore()"
+          matInput
+          type="text"
+          placeholder="Search Book or Author"
+          [matAutocomplete]="auto"
+          [formControl]="searchForm"
+        />
+        <mat-autocomplete
+          (optionSelected)="searchStore()"
+          #auto="matAutocomplete"
+        >
+          @for (book of filteredBooks; track $index) {
+          <mat-option [value]="book.Title">
+            {{ book.Title }}
+          </mat-option>
+          }
+        </mat-autocomplete>
+        <button matSuffix mat-icon-button [hidden]="searchForm.value">
+          <mat-icon>search</mat-icon>
+        </button>
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="clearSearch()"
+          [hidden]="!searchForm.value"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+
+    <button mat-raised-button color="primary" (click)="onLogin()">Login</button>
+
+    <button mat-icon-button color="primary" (click)="openCart()">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+
+    <button mat-button [matMenuTriggerFor]="menu" class="rounded-circle">
+      <img
+        src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg"
+        width="40"
+        height="40"
+        class="rounded-circle"
+      />
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Orders</button>
+      <button mat-menu-item>Edit Profile</button>
+      <button mat-menu-item>Log Out</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>

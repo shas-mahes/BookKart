@@ -1,0 +1,173 @@
+// BASE COLORS
+$bk-black: #000;
+$bk-black-80: #000000cc;
+$bk-white: #fff;
+$bk-error: #db3030; // RED 300, RED (SECONDARY COLOR)
+$bk-success: #28ac58; // GREEN 500, GREEN (SECONDARY COLOR)
+$bk-warning: #ed871f; // ORANGE 300, ORANGE (SECONDARY COLOR)
+$bk-info: #009af0; // BLUE 400
+
+// PRIMARY COLORS
+$bk-blue: #007cbf; // BLUE 600
+$bk-teal: #009d8c; // TEAL 600
+$bk-gray: #343a40; // GRAY 800
+
+// SECONDARY COLORS
+$bk-pink: #e75094; // PINK 200
+$bk-purple: #8b55b9; // PURPLE 300
+$bk-lime: #7dce20; // LIME 300
+$bk-yellow: #ffd630; // YELLOW 200
+// DO NOT ADD $bk-green, USE $bk-success
+// DO NOT ADD $bk-orange, USE $bk-warning
+// DO NOT ADD $bk-red, USE $bk-error
+
+// GRAY SCALE
+$bk-gray-25: #f9f9fa;
+$bk-gray-50: #ebedee;
+$bk-gray-75: #cfd3d7;
+$bk-gray-100: #b2bac1;
+$bk-gray-200: #96a0aa;
+$bk-gray-300: #7a8793;
+$bk-gray-400: #6d7a86;
+$bk-gray-500: #626d78;
+$bk-gray-600: #57606a;
+$bk-gray-700: #4b545c;
+
+// DO NOT ADD $bk-gray-800, USE $bk-gray
+$bk-gray-900: #292d32;
+
+// BLUE (PRIMARY)
+$bk-blue-25: #ebf8ff;
+$bk-blue-50: #d6f0ff;
+$bk-blue-75: #a3deff;
+$bk-blue-100: #70ccff;
+$bk-blue-200: #3dbaff;
+$bk-blue-300: #0aa8ff;
+
+// DO NOT ADD $bk-blue-400, USE $bk-info
+$bk-blue-500: #008ad6;
+
+// DO NOT ADD $bk-blue-600, USE $bk-blue
+$bk-blue-700: #0069a3;
+$bk-blue-800: #004870;
+$bk-blue-900: #003857;
+
+// TEAL (SECONDARY)
+$bk-teal-25: #e7fdfb;
+$bk-teal-50: #cefdf8;
+$bk-teal-75: #97fcf1;
+$bk-teal-100: #5ffcec;
+$bk-teal-200: #1cf7df;
+$bk-teal-300: #00e9d1;
+$bk-teal-400: #00d0ba;
+$bk-teal-500: #00b6a3;
+
+// DO NOT ADD $bk-teal-600, use $bk-teal
+$bk-teal-700: #00837a;
+$bk-teal-800: #005048;
+$bk-teal-900: #003731;
+
+// RED (ERRORS)
+$bk-red-25: #fff5f5;
+$bk-red-50: #f9dede;
+$bk-red-75: #f2b2b2;
+$bk-red-100: #ea8787;
+$bk-red-200: #e75054;
+
+// DO NOT ADD $bk-red-300, use $bk-error
+$bk-red-400: #ce2424;
+$bk-red-500: #b82020;
+$bk-red-600: #a21c1c;
+$bk-red-700: #8d1818;
+$bk-red-800: #611111;
+$bk-red-900: #4b0d0d;
+
+// PINK
+$bk-pink-25: #fdedf4;
+$bk-pink-50: #f9d7e6;
+$bk-pink-75: #f3aacb;
+$bk-pink-100: #ed7db0;
+
+// DOT NOT ADD $bk-pink-200, USE $bk-pink
+$bk-pink-300: #e12379;
+$bk-pink-400: #ce1c6d;
+$bk-pink-500: #b81961;
+$bk-pink-600: #a21655;
+$bk-pink-700: #8b1349;
+$bk-pink-800: #5e0d32;
+$bk-pink-900: #480a26;
+
+// PURPLE
+$bk-purple-25: #faf8fc;
+$bk-purple-50: #eee6f4;
+$bk-purple-75: #d5c1e6;
+$bk-purple-100: #bc9dd7;
+$bk-purple-200: #a479c8;
+
+// DO NOT ADD $bk-purple-300, USE $bk-purple
+$bk-purple-400: #7e47ad;
+$bk-purple-500: #71409b;
+$bk-purple-600: #643989;
+$bk-purple-700: #573177;
+$bk-purple-800: #3c2253;
+$bk-purple-900: #2f1b41;
+
+// GREEN
+$bk-green-25: #f1fcf5;
+$bk-green-50: #dcf7e6;
+$bk-green-75: #b3edc8;
+$bk-green-100: #89e4aa;
+$bk-green-200: #60da8c;
+$bk-green-300: #37d06f;
+$bk-green-400: #2dc163;
+
+// DO NOT ADD $bk-green-500, USE $bk-success
+$bk-green-600: #23974d;
+$bk-green-700: #1e8343;
+$bk-green-800: #15592e;
+$bk-green-900: #104523;
+
+// LIME
+$bk-lime-25: #ebf9da;
+$bk-lime-50: #dff6c4;
+$bk-lime-75: #c6ef98;
+$bk-lime-100: #aee86c;
+$bk-lime-200: #96e140;
+
+// DO NOT ADD $bk-lime-300, USE $bk-lime
+$bk-lime-400: #6fb81c;
+$bk-lime-500: #62a219;
+$bk-lime-600: #558c16;
+$bk-lime-700: #477612;
+$bk-lime-800: #2d4a0b;
+$bk-lime-900: #1f3408;
+
+// ORANGE
+$bk-orange-25: #fef9f3;
+$bk-orange-50: #fcecdc;
+$bk-orange-75: #f8d3ad;
+$bk-orange-100: #f5b97d;
+$bk-orange-200: #f1a04e;
+
+// DO NOT ADD $bk-orange-300, USE $bk-warning
+$bk-orange-400: #e17a12;
+$bk-orange-500: #c96d10;
+$bk-orange-600: #b1600e;
+$bk-orange-700: #9a530c;
+$bk-orange-800: #6b3a08;
+$bk-orange-900: #532d07;
+
+// YELLOW
+$bk-yellow-25: #fff9e3;
+$bk-yellow-50: #fff4ce;
+$bk-yellow-75: #ffea96;
+$bk-yellow-100: #ffe063;
+
+// DO NOT ADD $bk-yellow-200, USE $bk-yellow
+$bk-yellow-300: #fcca00;
+$bk-yellow-400: #e3b500;
+$bk-yellow-500: #c9a100;
+$bk-yellow-600: #b08d00;
+$bk-yellow-700: #967800;
+$bk-yellow-800: #634f00;
+$bk-yellow-900: #4a3b00;
